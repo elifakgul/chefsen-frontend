@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import { djangoApi } from "../api"; // 💡 Django backend client
 import "./Anasayfa.css";
 import { useNavigate, Link } from "react-router-dom";
