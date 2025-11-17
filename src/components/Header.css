@@ -1,0 +1,323 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 95px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+  background: rgba(102, 59, 77, 0.4); /* Çok hafif beyaz */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* DEB yazısı rengi */
+}
+
+.center .link {
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); /* yazı okunurluğu için */
+}
+
+.site-name,
+.welcome-text {
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.right .search-input {
+  background: rgba(255, 255, 255, 0.15);
+  color: rgb(63, 61, 61);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.right .search-input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.right .search-input {
+  padding: 5px;
+  border: 1px solid #a9a7a7;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.right .login-button {
+  padding: 5px 10px;
+  background-color: #b58796;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Modal arka plan stili */
+.modal-overlay {
+  position: fixed; /* Ekranın tamamını kaplayacak */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Arka planı karartma */
+  display: flex; /* Ortalamak için flexbox kullanıyoruz */
+  justify-content: center; /* Yatayda ortalama */
+  align-items: center; /* Dikeyde ortalama */
+  z-index: 1000; /* Üstte görünmesi için yüksek bir z-index değeri */
+}
+
+/* Modal içeriği stili */
+.modal-content {
+  background: rgb(239, 234, 234); /* Arka plan rengi */
+  padding: 30px; /* İç boşluk */
+  border-radius: 10px; /* Köşe yuvarlatma */
+  width: 350px; /* Genişlik */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Hafif gölge */
+  text-align: center; /* İçeriği ortalama */
+  position: relative;
+  margin-top: 450px; /* ya da 200px istersen */
+  max-height: 80vh;  /* taşmayı engellemek için */
+  overflow-y: auto;  /* içerik fazla olursa scroll çıksın */
+}
+
+/* Form grup stili */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Etiketler sola yaslanır */
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; /* Taşmayı önler */
+}
+
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #218838; /* Hover durumu */
+}
+
+.close-button {
+  margin-top: 15px; /* Giriş Yap butonundan biraz boşluk bırak */
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Genişliği Giriş Yap butonuyla aynı yap */
+  box-sizing: border-box;
+}
+
+.close-button:hover {
+  background-color: #c82333; /* Hover durumu */
+}
+
+
+.close-button:hover {
+  background-color: #c82333; /* Hover durumu */
+}
+
+.modal-content h2 {
+  color: #000; /* Siyah renk */
+  font-size: 24px; /* Daha büyük bir yazı boyutu için */
+  margin-bottom: 20px; /* Altına boşluk bırak */
+}
+
+.switch-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.switch-link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.switch-link:hover {
+  color: #0056b3;
+}
+
+.logo {
+  height: 70px; /* Bir tık daha küçük yükseklik */
+  width: auto; /* Genişlik otomatik ayarlanır */
+  border-radius: 50%; /* Tamamen yuvarlak */
+  margin-right: 15px; /* Sağ tarafa boşluk */
+  object-fit: cover; /* Görselin düzgün kesilmesini sağlar */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+
+
+/*sağ taraftaki üye girişinden sonrası burası*/
+/* "user-info" kapsayıcısı: dikey düzen */
+.user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* İçerikleri ortalamak için */
+}
+
+
+
+/* "user-buttons" kapsayıcısı: butonları yatay sıralama */
+.user-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px; /* Hoşgeldin metni ile butonlar arasında boşluk */
+  
+}
+
+/* Butonların genel stili */
+.add-button,
+.logout-button,
+.login-button {
+  padding: 8px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+
+.login-button:hover {
+  background-color: white;
+}
+
+.login-button:hover {
+  background-color: #000406;
+}
+
+.welcome-text {
+  color: black;
+}/*sağ taraftaki üye girişinden sonrası burası*/
+
+
+.search-input {
+  padding: 8px;
+  font-size: 14px;
+  width: 200px;
+  border: 1px solid #474747;
+  border-radius: 4px;
+}
+.search-input::placeholder {
+  color: #1a1a1a; /* daha koyu bir renk */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* gölge */
+  font-weight: bold;
+  opacity: 1; /* bazı tarayıcılarda gerekebilir */
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgb(224, 217, 217);
+  color: rgb(20, 17, 17); /* ✨ Burayı ekliyoruz */
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+
+.search-results li {
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-results li:hover {
+  background-color: #121111;
+}
+
+.center .link {
+  color: rgb(247, 243, 243);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.center .link:hover {
+  color: #ffb6c1; /* Açık pembe hover efekti */
+}
+
+.site-name {
+  color: white;
+}
+
+.welcome-text {
+  color: white;
+}
+body {
+  margin-top: 75px; /* Header yüksekliğine göre ayarlarsın */
+}
+
+
+
+
+
+
+
+
+

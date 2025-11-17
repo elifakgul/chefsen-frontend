@@ -1,0 +1,94 @@
+.tarifdetay-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Georgia', serif;
+    color: #222;
+  }
+  
+  .tarifdetay-header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .tarifdetay-image {
+    flex: 1 1 400px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  }
+  
+  .tarifdetay-meta {
+    flex: 1 1 400px;
+  }
+  
+  .tarifdetay-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tag {
+    background-color: #c7dfe4;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .tarifdetay-title {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .tarifdetay-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .tarifdetay-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .ingredients, .instructions {
+    flex: 1 1 400px;
+  }
+  
+  .ingredients h2, .instructions h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+    color: #5f2d4c;
+  }
+  
+  .tarifdetay-btn {
+    margin-top: 40px;
+    padding: 10px 20px;
+    background-color: #5f2d4c;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .tarifdetay-btn:hover {
+    background-color: #4a1f3b;
+  }
+  
+  .loading-text {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 20px;
+  }
+  
