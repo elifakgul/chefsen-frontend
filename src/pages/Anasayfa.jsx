@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { djangoApi } from "../api"; // 💡 Django backend client
 import "./Anasayfa.css";
+import { useNavigate, Link } from "react-router-dom";
+
 
 const Anasayfa = () => {
   const [tarifler, setTarifler] = useState([]);
@@ -110,9 +112,9 @@ const Anasayfa = () => {
               önerileriyle geri dönsün.
             </p>
           </div>
-          <a href="/chef">
+          <Link to="/chef">
             <button className="chefai-button">Chef AI'ı Deneyimle</button>
-          </a>
+          </Link>
         </div>
       </section>
     </div>
