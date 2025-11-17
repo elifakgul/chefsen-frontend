@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { djangoApi } from "../api"; // 💡 Django backend client
-import "./anasayfa.css";
+import "./Anasayfa.css";
 
 const Anasayfa = () => {
   const [tarifler, setTarifler] = useState([]);
